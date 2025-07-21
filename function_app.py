@@ -42,10 +42,13 @@ Account Information & Management
 •	Investment Details - Requests for specific information regarding investment accounts, including membership number, portfolio composition, and related financial inquiries
 •	Membership ID - Unique account identifier requests
 •	Relationship Manager Request - Assigned sales team member inquiries
-•	Account Linking – Securities and Investment Account under one login (For Example, linking a Mutual Fund Account with a Securities Account, or linking a Securities Account with a Mutual Fund Account)
+•	Account Linking Enquiry– Securities and Investment Account under one login (For Example, linking a Mutual Fund Account with a Securities Account, or linking a Securities Account with a Mutual Fund Account)
+•	Account Linking Complaint – Issues with linking multiple accounts under one login
 •	Account Upgrade - Tier 1 (Basic) to Tier 3 (Premium) upgrade requests
+•	Account Upgrade Status Update - Updates on the completion, delay, or progress of an account upgrade request
 •	Account Cancellation Request - Requests to close or cancel an account or stop investments subscription
-•	Account Switching - Multiple account consolidation under single login (For example Parent and Children Account, Husband and Wife Account, etc.)
+•	Account Switching Enquiry - Multiple account consolidation under single login (For example Parent and Children Account, Husband and Wife Account, etc.)
+•	Account Switching Complaint - Issues with switching accounts or linking multiple accounts under one login
 •	Investment Subscription Enquiry - Customer questions regarding the fund payment or subscription process (of investment products)
 •	Investment Subscription Acknowledgement - Acknowledgement OR Confirmation of subscription request from client after making payment(A customer had made a subscription and wants an acknowledgement or confirmation)
 •	Investment Subscription Request - Formal instructions from a customer to subscribe to a mutual fund
@@ -105,10 +108,12 @@ Stamped Statement Request
 Investment Details
 Membership ID
 Relationship Manager Request
-Account Linking
+Account Linking Enquiry
+Account Linking Complaint
 Account Upgrade
 Account Cancellation Request
-Account Switching
+Account Switching Enquiry
+Account Switching Complaint
 Investment Subscription Enquiry
 Investment Subscription Acknowledgement
 Investment Subscription Request
@@ -146,6 +151,7 @@ Contact Address Abuja
 Contact Address Onitcha
 Contact Address Ibadan
 Product Information Enquiry
+Account Upgrade Status Update
 
 
 Instructions:
