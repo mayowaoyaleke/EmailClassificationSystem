@@ -275,7 +275,7 @@ def classify_email(email_sender, email_subject, email_body, azure_api_key, azure
                 {"role": "user", "content": user_prompt_template.format(email_sender=email_sender, email_subject=email_subject, email_body=email_body)}
             ],
             max_tokens=4096,
-            temperature=1.0,
+            temperature=0.1,
             top_p=1.0,
         )
         
