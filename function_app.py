@@ -185,6 +185,7 @@ Instructions:
 - Cliets asking for Portfolio Analysis also means they want Statement Request, so classify as Stamped Statement Request or Unstamped Statement Request depending on the request
 - If Cliets are having issues accessing their account, it should be classified under ARM ONE App Issues
 - Dont Classfy any email that looks like a follow up email, just return blank for all categories and confidence levels
+- Verification of payment should be classified as Investment or Subscription Subscription Status Update
 Email Sender:
 """
 {email_sender}
