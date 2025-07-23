@@ -31,6 +31,8 @@ Enquiries: Means customer asking questions or wanting to know more about a proce
 Complaints: Means customer is dissatisfied or angry about a service or product
 Status Update: Means customer wants to know the status of a request or enquiry
 Acknowledgement: Means customer wants confirmation of a request or action taken (Like Subscription or Redemption Acknowledgement)
+Switching: Means customer wants to switch between multiple accounts or link accounts under one login (Like Parent and Children Account, Husband and Wife Account, Family Relation Account etc.)
+Linking: Means customer wants to link multiple personal accounts under one login (Like Securites and Investment Accounts)
 
 Account Access & Authentication
 •	Activate Account - First-time access requests for ARM ONE app/website
@@ -42,14 +44,16 @@ Account Information & Management
 •	Investment Details - Requests for specific information regarding investment accounts, including membership number, portfolio composition, and related financial inquiries
 •	Membership ID - Unique account identifier requests
 •	Relationship Manager Request - Assigned sales team member inquiries
-•	Account Linking Enquiry– Securities and Investment Account under one login (For Example, linking a Mutual Fund Account with a Securities Account, or linking a Securities Account with a Mutual Fund Account)
+•	Account Linking Enquiry– Customer wants to know the process of linking personal Securities and Investment Account under one login (For Example, linking a Mutual Fund Account with a Securities Account, or linking a Securities Account with a Mutual Fund Account)
 •	Account Linking Complaint – Issues with linking multiple accounts under one login
 •	Account Upgrade - Tier 1 (Basic) to Tier 3 (Premium) upgrade requests
 •	Account Upgrade Status Update - Updates on the completion, delay, or progress of an account upgrade request
 •	Account Cancellation Request - Requests to close or cancel an account or stop investments subscription
-•	Account Switching Enquiry - Multiple account consolidation under single login (For example Parent and Children Account, Husband and Wife Account, etc.)
+•	Account Switching Enquiry - Customer wants to know how to switch between Multiple account consolidated under single login (For example Parent and Children Account, Husband and Wife Account, Family Relation Account etc.)
 •	Account Switching Complaint - Issues with switching accounts or linking multiple accounts under one login
+•	Account Openeing Complaint - Issues with opening a new account or problems with the account opening process
 •	Investment Subscription Enquiry - Customer questions regarding the fund payment or subscription process (of investment products)
+•	Account Opening Follow up - Customer wants to follow up on the status of their account opening request or has requests related to account opening.
 •	Investment Subscription Acknowledgement - Acknowledgement OR Confirmation of subscription request from client after making payment(A customer had made a subscription and wants an acknowledgement or confirmation)
 •	Investment Subscription Request - Formal instructions from a customer to subscribe to a mutual fund
 •	Purchase Mutual Fund - Requests or information related to initiating mutual fund investments
@@ -70,6 +74,8 @@ Account Information & Management
 •	Securities Redemption Status Update - Updates on the completion, delay, or progress of a fund withdrawal  (on Securities Products)
 •	Securities Subscription Acknowledgement – Acknowledgement or confirmation of subscription request from client after making payment (A customer had made a subscription and wants an acknowledgement)
 •	Securities Redemption Acknowledgement – Acknowledgement or confirmation of redemption request from client after a client makes a withdrawal (A customer had made a redemption and wants an acknowledgement)
+•	Returning Client– Customer who has previously invested with ARM and is now returning to invest again (Example : Good afternoon. Please i used to be an investor with your company (Money market fund) however i have not invested for a while now but i want to start investing again. How do i go about it please)
+
 •	
 Investment Details & Support
 •	Interest Rate Inquiry - Annual interest rate affecting fund returns
@@ -101,6 +107,7 @@ user_prompt_template = '''You are a customer service Email assistant for an Asse
 these are the categories:
 
 Activate Account
+Account Opening Follow up
 Login Details Request
 Password Reset
 Unstamped Statement Request
@@ -109,6 +116,7 @@ Investment Details
 Membership ID
 Relationship Manager Request
 Account Linking Enquiry
+Account Openeing Complaint
 Account Linking Complaint
 Account Upgrade
 Account Cancellation Request
@@ -152,6 +160,7 @@ Contact Address Onitcha
 Contact Address Ibadan
 Product Information Enquiry
 Account Upgrade Status Update
+Returning Client
 
 
 Instructions:
@@ -192,6 +201,9 @@ Instructions:
 - If Cliets are having issues accessing their account, it should be classified under ARM ONE App Issues
 - Dont Classfy any email that looks like a follow up email, just return blank for all categories and confidence levels
 - Verification of payment should be classified as Investment or Subscription Subscription Status Update
+- This is also another example of Ackowledgemnet: " Good morning team, I made a withdrawal of #20,000  yesterday. Kindly process it as soon as possible."
+- If customer is not satisfied with preceding email response, just return blank for all categories and confidence levels (Make sure to read the email carefully)
+-
 Email Sender:
 """
 {email_sender}
